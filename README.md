@@ -11,7 +11,6 @@
 
 Hybrid framework with data driven and POM design patterns
 
-
 3- Project Structure
 
 a src/main/java
