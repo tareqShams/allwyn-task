@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="allSuites">
+        <test name="Api test">
+            <parameter name="buildNumber" value="1.0.0.1"/>
+            <classes>
+                <class name="com.api.task.Automation.tests.BooksTests">
+                    <methods>
+                        <include name="getBooksData" />
+                        <include name="getBookDataWithId" />
+                        <include name="postNewBook" />
+                        <include name="updateBook" />
+                        <include name="deleteBookWithId" />
+
+                    </methods>
+                </class>
+                <class name="com.api.task.Automation.tests.AuthorsTests">
+                    <methods>
+                        <include name="getAuthorsData" />
+                        <include name="getAuthorDataWithId" />
+                        <include name="postNewAuthor" />
+                        <include name="updateAuthor" />
+                        <include name="deleteAuthorWithId" />
+
+                    </methods>
+                </class>
+            </classes>
+        </test>
+    <listeners>
+        <listener class-name="listeners.AnnotationTransformer"/>
+    </listeners>
+</suite>

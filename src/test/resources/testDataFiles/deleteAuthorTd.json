@@ -1,0 +1,26 @@
+[
+  {
+    "testCaseTitle": "delete specific Author with Id",
+    "testCaseId" : "1",
+    "expectedResponseCode": "200",
+    "expectedResponseTitle": "",
+    "toBeVerifiedAuthorId": "1",
+    "id": "1",
+    "title": ""
+  },
+  {
+    "testCaseTitle": "delete specific Author with non exist Id",
+    "testCaseId" : "2",
+    "expectedResponseCode": "404",
+    "expectedResponseTitle": "Not Found",
+    "toBeVerifiedAuthorId": "9999999"
+  },
+  {
+    "testCaseTitle": "send delete request with invalid Id",
+    "testCaseId" : "3",
+    "expectedResponseCode": "400",
+    "expectedResponseTitle": "One or more validation errors occurred.",
+    "toBeVerifiedAuthorId": "abc"
+  }
+
+]

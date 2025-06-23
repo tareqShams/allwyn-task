@@ -1,0 +1,23 @@
+[
+  {
+    "testCaseTitle": "Get specific book data with Id",
+    "testCaseId" : "1",
+    "expectedResponseCode": "200",
+    "expectedResponseTitle": "",
+    "toBeVerifiedBookId": "1",
+    "id": "1",
+    "title": "Book 1",
+    "description": "Erat et tempor nostrud nulla et est takimata sea amet dignissim eu magna. Nobis et at labore ipsum vel et stet accumsan erat nonumy consetetur nonummy. Dolore aliquam lorem. Elitr et et ipsum dolor stet dolor rebum magna iusto no. Lorem sit ut dolor consetetur diam dolor zzril clita eos sanctus dolores enim. Sea clita diam esse voluptua. Aliquyam diam placerat et facer lorem dolore sed accusam tempor nonumy dolores lorem sadipscing aliquyam eirmod at sed.\\n",
+    "pageCount": 100,
+    "excerpt": "Sadipscing lorem eleifend lorem accusam magna sit et dolores dolor clita sea veniam erat takimata sit gubergren. Amet eum voluptua commodo consetetur diam sea. Augue amet labore justo luptatum ex illum sea elit nulla consectetuer dolor lorem et. Kasd sea blandit eleifend ea clita nonumy molestie. Rebum ipsum dolore sadipscing rebum consetetur. Gubergren sit ea sit clita esse volutpat invidunt kasd duis accusam feugiat sit te rebum. Lorem sadipscing amet lorem consetetur suscipit sadipscing sed exerci clita magna est vulputate. Molestie enim est voluptua gubergren sanctus hendrerit vero diam iusto takimata amet. Justo sed et nostrud amet praesent dolor ad.\\nNonumy sadipscing amet ipsum suscipit sadipscing sit. Clita praesent clita no voluptua hendrerit justo duo nulla gubergren. Dolor kasd et dolore justo vero diam et. Invidunt eirmod velit est dolor sit luptatum dolore suscipit dolor labore magna diam magna stet. Sea gubergren elit. Vulputate te gubergren invidunt amet.\\nFacilisi gubergren eu nulla duo gubergren. Sanctus ut diam tation sea accumsan voluptua. Te ut voluptua diam sit aliquyam ipsum iriure tincidunt rebum esse. Minim gubergren sed blandit sanctus invidunt dolore gubergren et sed eos dolores accusam voluptua hendrerit eirmod eirmod lorem ipsum. Eos labore lorem et gubergren ipsum eos tempor et dolore diam eleifend nihil at labore sit dolore consetetur. Est in et diam justo consequat gubergren et invidunt vero rebum takimata nonumy. Elit sit adipiscing kasd vero takimata dolor stet sit nam augue sit vulputate eirmod sit sadipscing eum. At accusam dolore esse takimata at magna eirmod amet clita diam duis. Facilisis sit diam duo delenit magna cum sanctus velit ea sed imperdiet feugiat diam dolores sadipscing est at.\\nInvidunt aliquyam ipsum stet amet hendrerit duo magna dolor. Exerci id ea consequat lorem consectetuer ut tempor gubergren vulputate sadipscing et sed accusam accusam nonumy dolor sit dolor. Consetetur adipiscing consetetur est et adipiscing eu nulla et sadipscing blandit takimata in eu sed et dolore aliquyam. Sit vero qui.\\nNobis consequat ipsum minim in sanctus elitr dolores et in stet vero amet gubergren et. Ipsum sea lorem vero eirmod qui labore magna erat vero takimata et eos sit vulputate voluptua eirmod. Accusam et dolor dolores ut et duo amet vero dolor gubergren duo dolore ipsum magna erat rebum ut. Takimata dolore ipsum ea et sit ad dolore gubergren consetetur tempor ipsum. Tempor diam eirmod cum invidunt invidunt et vel sanctus eirmod rebum invidunt consectetuer duis in ipsum tincidunt consetetur dolore. Aliquip magna et et elitr at et lorem dolor. Sanctus tempor amet aliquyam feugiat sanctus luptatum accusam duis sed clita sea ex consetetur. Ad sea diam nonumy et dolores amet est justo sit esse. Labore amet sea et duo aliquyam eu dolore diam sed dolore ea odio et. Eleifend lorem est vel lorem amet accusam facilisis dolor diam. Eos sed takimata dolore dolor erat sea est sit no dolores sea amet diam dolores. Euismod laoreet eos vero dolore no diam labore labore delenit ipsum sea labore rebum zzril et.\\n",
+    "publishDate": "2025-06-20T04:25:58.7463153+00:00"
+  },
+  {
+    "testCaseTitle": "Get specific book data with invalid Id",
+    "testCaseId" : "2",
+    "expectedResponseCode": "404",
+    "expectedResponseTitle": "Not Found",
+    "toBeVerifiedBookId": "9999999"
+  }
+
+]

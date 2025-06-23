@@ -1,0 +1,200 @@
+[
+  {
+    "testCaseTitle": "update Author with valid data",
+    "testCaseId": "1",
+    "expectedResponseCode": "200",
+    "expectedResponseTitle": "",
+    "toBeVerifiedAuthorId": "1",
+    "id": "1",
+    "idBook": "1",
+    "firstName": "#",
+    "lastName": "#"
+  },
+  {
+    "testCaseTitle": "update Author with already exist ID",
+    "testCaseId": "2",
+    "expectedResponseCode": "200",
+    "expectedResponseTitle": "",
+    "toBeVerifiedAuthorId": "1",
+    "id": "2",
+    "idBook": "1",
+    "firstName": "#",
+    "lastName": "#"
+  },
+  {
+    "testCaseTitle": "update Author with empty author ID",
+    "testCaseId": "3",
+    "expectedResponseCode": "400",
+    "expectedResponseTitle": "One or more validation errors occurred.",
+    "toBeVerifiedAuthorId": "1",
+    "id": "",
+    "idBook": "1",
+    "firstName": "#",
+    "lastName": "#"
+  },
+  {
+    "testCaseTitle": "update book with empty Book id",
+    "testCaseId": "4",
+    "expectedResponseCode": "400",
+    "expectedResponseTitle": "One or more validation errors occurred.",
+    "toBeVerifiedAuthorId": "1",
+    "id": "1",
+    "idBook": "",
+    "firstName": "#",
+    "lastName": "#"
+  },
+  {
+    "testCaseTitle": "update Author with empty  Firstname",
+    "testCaseId": "5",
+    "expectedResponseCode": "200",
+    "expectedResponseTitle": "",
+    "toBeVerifiedAuthorId": "1",
+    "id": "4",
+    "idBook": "1",
+    "firstName": "",
+    "lastName": "#"
+  },
+  {
+    "testCaseTitle": "update Author with empty Lastname",
+    "testCaseId": "6",
+    "expectedResponseCode": "200",
+    "expectedResponseTitle": "",
+    "toBeVerifiedAuthorId": "1",
+    "id": "9",
+    "idBook": "1",
+    "firstName": "#",
+    "lastName": ""
+  },
+  {
+    "testCaseTitle": "update Author with invalid ID",
+    "testCaseId": "7",
+    "expectedResponseCode": "400",
+    "expectedResponseTitle": "One or more validation errors occurred.",
+    "toBeVerifiedAuthorId": "1",
+    "id": "abc",
+    "idBook": "1",
+    "firstName": "#",
+    "lastName": "#"
+  },
+  {
+    "testCaseTitle": "update Author with invalid book id",
+    "testCaseId": "8",
+    "expectedResponseCode": "400",
+    "expectedResponseTitle": "One or more validation errors occurred.",
+    "toBeVerifiedAuthorId": "1",
+    "id": "7",
+    "idBook": "abc",
+    "firstName": "#",
+    "lastName": "#"
+  },
+  {
+    "testCaseTitle": "update Author with numbers in firstName",
+    "testCaseId": "9",
+    "expectedResponseCode": "200",
+    "expectedResponseTitle": "",
+    "toBeVerifiedAuthorId": "1",
+    "id": "5",
+    "idBook": "1",
+    "firstName": "123",
+    "lastName": "#"
+  },
+  {
+    "testCaseTitle": "update Author with numbers in lastName",
+    "testCaseId": "10",
+    "expectedResponseCode": "200",
+    "expectedResponseTitle": "",
+    "toBeVerifiedAuthorId": "1",
+    "id": "6",
+    "idBook": "1",
+    "firstName": "#",
+    "lastName": "123"
+  },
+  {
+    "testCaseTitle": "update author with updatable id exceeding range",
+    "testCaseId": "11",
+    "expectedResponseCode": "400",
+    "expectedResponseTitle": "One or more validation errors occurred.",
+    "toBeVerifiedAuthorId": "99999999999999999",
+    "id": "8",
+    "idBook": "1",
+    "firstName": "#",
+    "lastName": "#"
+  },
+  {
+    "testCaseTitle": "update author with to be updated id exceeding range",
+    "testCaseId": "12",
+    "expectedResponseCode": "400",
+    "expectedResponseTitle": "One or more validation errors occurred.",
+    "toBeVerifiedAuthorId": "1",
+    "id": "99999999999999999",
+    "idBook": "1",
+    "firstName": "#",
+    "lastName": "#"
+  },
+  {
+    "testCaseTitle": "update author with to be updated id 0",
+    "testCaseId": "13",
+    "expectedResponseCode": "200",
+    "expectedResponseTitle": "",
+    "toBeVerifiedAuthorId": "1",
+    "id": "0",
+    "idBook": "1",
+    "firstName": "#",
+    "lastName": "#"
+  },
+  {
+    "testCaseTitle": "update author with book id 0",
+    "testCaseId": "14",
+    "expectedResponseCode": "200",
+    "expectedResponseTitle": "",
+    "toBeVerifiedAuthorId": "1",
+    "id": "1",
+    "idBook": "0",
+    "firstName": "#",
+    "lastName": "#"
+  },
+  {
+    "testCaseTitle": "update author with book id has special character ",
+    "testCaseId": "13",
+    "expectedResponseCode": "400",
+    "expectedResponseTitle": "One or more validation errors occurred.",
+    "toBeVerifiedAuthorId": "1",
+    "id": "1",
+    "idBook": "1@",
+    "firstName": "#",
+    "lastName": "#"
+  },
+  {
+    "testCaseTitle": "update author with id has special character ",
+    "testCaseId": "14",
+    "expectedResponseCode": "400",
+    "expectedResponseTitle": "One or more validation errors occurred.",
+    "toBeVerifiedAuthorId": "1",
+    "id": "1@",
+    "idBook": "1",
+    "firstName": "#",
+    "lastName": "#"
+  },
+  {
+    "testCaseTitle": "update author with book id has space character ",
+    "testCaseId": "15",
+    "expectedResponseCode": "400",
+    "expectedResponseTitle": "One or more validation errors occurred.",
+    "toBeVerifiedAuthorId": "1",
+    "id": "1",
+    "idBook": "1 1",
+    "firstName": "#",
+    "lastName": "#"
+  },
+  {
+    "testCaseTitle": "update author with id has space character ",
+    "testCaseId": "16",
+    "expectedResponseCode": "400",
+    "expectedResponseTitle": "One or more validation errors occurred.",
+    "toBeVerifiedAuthorId": "1",
+    "id": "1 1",
+    "idBook": "1",
+    "firstName": "#",
+    "lastName": "#"
+  }
+]
