@@ -38,7 +38,7 @@ public class BooksAssertions {
                     String.format("Invalid book Excerpt with expected %s and Actual %s", expected.getExcerpt(), response.getExcerpt()));
             Log.info("Validating Book PublishDate");
             softAssert.assertTrue(response.getPublishDate().contains(expected.getPublishDate()),
-                    String.format("Invalid book Publish Date with expected %s and Actual %s", expected.getExcerpt(), response.getExcerpt()));
+                    String.format("Invalid book Publish Date with expected %s and Actual %s", expected.getPublishDate(), response.getPublishDate()));
         } else {
             Log.info("Validating Error title");
             softAssert.assertEquals(response.getTitle(), expected.getExpectedResponseTitle(),
