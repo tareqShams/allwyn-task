@@ -33,7 +33,7 @@ public class AuthorsAssertions {
                     String.format("Invalid author first name with expected %s and Actual %s", expected.getFirstName(), response.getFirstName()));
             Log.info("Validating Author's last name");
             softAssert.assertEquals(response.getLastName(), expected.getLastName(),
-                    String.format("Invalid book Pages count with expected %s and Actual %s", expected.getLastName(), response.getLastName()));
+                    String.format("Invalid Author's LastName with expected %s and Actual %s", expected.getLastName(), response.getLastName()));
         } else {
             Log.info("Validating Error title");
             softAssert.assertEquals(response.getTitle(), expected.getExpectedResponseTitle(),

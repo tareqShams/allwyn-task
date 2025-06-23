@@ -92,6 +92,7 @@ public class BooksTests extends BaseTest {
             mainParameters.put("pageCount", bookDm.getPageCount());
             mainParameters.put("excerpt", bookDm.getExcerpt());
             mainParameters.put("publishDate", bookDm.getPublishDate());
+            logRequestBody(mainParameters.toString());
 
             RequestSpecification request = RestAssured.given();
             request.contentType(contentType);
@@ -133,6 +134,7 @@ public class BooksTests extends BaseTest {
             mainParameters.put("pageCount", bookDm.getPageCount());
             mainParameters.put("excerpt", bookDm.getExcerpt());
             mainParameters.put("publishDate", bookDm.getPublishDate());
+            logRequestBody(mainParameters.toString());
 
             RequestSpecification request = RestAssured.given();
             request.contentType(contentType);

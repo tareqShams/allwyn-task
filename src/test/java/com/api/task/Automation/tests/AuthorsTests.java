@@ -82,12 +82,18 @@ public class AuthorsTests extends BaseTest {
             if (authorDm.getId().equals(GeneralConstants.STRING_DELIMETER)) {
                 authorDm.setId(String.valueOf(newRandom));
             }
+            if (authorDm.getFirstName().equals(GeneralConstants.STRING_DELIMETER)) {
+                authorDm.setFirstName("First"+String.valueOf(newRandom));
+            }
+            if (authorDm.getLastName().equals(GeneralConstants.STRING_DELIMETER)) {
+                authorDm.setLastName("Last"+String.valueOf(newRandom));
+            }
             JSONObject mainParameters = new JSONObject();
             mainParameters.put("id", authorDm.getId());
             mainParameters.put("idBook", authorDm.getIdBook());
             mainParameters.put("firstName", authorDm.getFirstName());
             mainParameters.put("lastName", authorDm.getLastName());
-
+            logRequestBody(mainParameters.toString());
             RequestSpecification request = RestAssured.given();
             request.contentType(contentType);
             request.body(mainParameters.toString());
@@ -108,7 +114,7 @@ public class AuthorsTests extends BaseTest {
     }
 
     @Test(dataProvider = "updateAuthorDataProvider")
-    public void updateBook(AuthorDm authorDm) {
+    public void updateAuthor(AuthorDm authorDm) {
         //Create extent test to be logged in report using test case title
         test = extent.createTest(authorDm.getTestCaseTitle());
         Log.test = test;
@@ -118,12 +124,18 @@ public class AuthorsTests extends BaseTest {
             if (authorDm.getId().equals(GeneralConstants.STRING_DELIMETER)) {
                 authorDm.setId(String.valueOf(newRandom));
             }
-
+            if (authorDm.getFirstName().equals(GeneralConstants.STRING_DELIMETER)) {
+                authorDm.setFirstName("First"+String.valueOf(newRandom));
+            }
+            if (authorDm.getLastName().equals(GeneralConstants.STRING_DELIMETER)) {
+                authorDm.setLastName("Last"+String.valueOf(newRandom));
+            }
             JSONObject mainParameters = new JSONObject();
             mainParameters.put("id", authorDm.getId());
             mainParameters.put("idBook", authorDm.getIdBook());
             mainParameters.put("firstName", authorDm.getFirstName());
             mainParameters.put("lastName", authorDm.getLastName());
+            logRequestBody(mainParameters.toString());
 
             RequestSpecification request = RestAssured.given();
             request.contentType(contentType);

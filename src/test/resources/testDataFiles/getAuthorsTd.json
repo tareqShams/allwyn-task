@@ -1,0 +1,21 @@
+[
+  {
+    "testCaseTitle": "Get specific Author data with Id",
+    "testCaseId" : "1",
+    "expectedResponseCode": "200",
+    "expectedResponseTitle": "",
+    "toBeVerifiedAuthorId": "1",
+    "id": "1",
+    "idBook": "1",
+    "firstName": "First Name 1",
+    "lastName": "Last Name 1"
+  },
+  {
+    "testCaseTitle": "Get specific Author data with invalid Id",
+    "testCaseId" : "2",
+    "expectedResponseCode": "404",
+    "expectedResponseTitle": "Not Found",
+    "toBeVerifiedAuthorId": "9999999"
+  }
+
+]

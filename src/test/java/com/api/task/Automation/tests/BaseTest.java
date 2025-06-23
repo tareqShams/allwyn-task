@@ -52,10 +52,9 @@ public class BaseTest {
             Log.info("Setting up extent report before test");
 
             // specify location of the report
-           /* htmlReporter = new ExtentHtmlReporter(System.getProperty("user.dir") + extentReportFilePath +
+            htmlReporter = new ExtentHtmlReporter(System.getProperty("user.dir") + extentReportFilePath +
                     GeneralConstants.STRING_DELIMETER +
-                    dateTime + ".html");*/
-            htmlReporter = new ExtentHtmlReporter("D:\\report.html");
+                    dateTime + ".html");
 
             htmlReporter.config().setDocumentTitle(generalConfigsProps.getProperty(GeneralConstants.EXTENT_REPORT_TITLE)); // Title of report
             htmlReporter.config().setReportName(generalConfigsProps.getProperty(GeneralConstants.EXTENT_REPORT_NAME)); // Name of the report
@@ -102,5 +101,8 @@ public class BaseTest {
         Log.info("Closing Extent report after Test");
         if (extent != null)
             extent.flush();
+    }
+    public void logRequestBody(String requestBody){
+        Log.info("Api Request body: " +requestBody);
     }
 }

@@ -1,0 +1,152 @@
+[
+  {
+    "testCaseTitle": "add new Author with valid data",
+    "testCaseId": "1",
+    "expectedResponseCode": "200",
+    "expectedResponseTitle": "",
+    "id": "#",
+    "idBook": "1",
+    "firstName": "# ",
+    "lastName": "#"
+  },
+  {
+    "testCaseTitle": "add new Author with already exist ID",
+    "testCaseId": "2",
+    "expectedResponseCode": "200",
+    "expectedResponseTitle": "",
+    "id": "1",
+    "idBook": "1",
+    "firstName": "# ",
+    "lastName": "#"
+  },
+  {
+    "testCaseTitle": "add new Author with empty ID",
+    "testCaseId": "3",
+    "expectedResponseCode": "400",
+    "expectedResponseTitle": "One or more validation errors occurred.",
+    "id": "",
+    "idBook": "1",
+    "firstName": "#",
+    "lastName": "#"
+  },
+  {
+    "testCaseTitle": "add new Author with empty idBook",
+    "testCaseId": "4",
+    "expectedResponseCode": "400",
+    "expectedResponseTitle": "One or more validation errors occurred.",
+    "id": "#",
+    "idBook": "",
+    "firstName": "# ",
+    "lastName": "#"
+  },
+  {
+    "testCaseTitle": "add new Author with empty Author firstName",
+    "testCaseId": "5",
+    "expectedResponseCode": "200",
+    "expectedResponseTitle": "",
+    "id": "#",
+    "idBook": "1",
+    "firstName": "",
+    "lastName": "#"
+  },
+  {
+    "testCaseTitle": "add new Author with empty Author LastName",
+    "testCaseId": "6",
+    "expectedResponseCode": "200",
+    "expectedResponseTitle": "",
+    "id": "#",
+    "idBook": "1",
+    "firstName": "#",
+    "lastName": ""
+  },
+  {
+    "testCaseTitle": "add new book with all fields empty",
+    "testCaseId": "7",
+    "expectedResponseCode": "400",
+    "expectedResponseTitle": "One or more validation errors occurred.",
+    "id": "",
+    "idBook": "",
+    "firstName": "",
+    "lastName": ""
+  },
+  {
+    "testCaseTitle": "add new Author with invalid book ID",
+    "testCaseId": "8",
+    "expectedResponseCode": "400",
+    "expectedResponseTitle": "One or more validation errors occurred.",
+    "id": "#",
+    "idBook": "abc",
+    "firstName": "#",
+    "lastName": "#"
+  },
+  {
+    "testCaseTitle": "add new Author with invalid ID",
+    "testCaseId": "9",
+    "expectedResponseCode": "400",
+    "expectedResponseTitle": "One or more validation errors occurred.",
+    "id": "abc",
+    "idBook": "1",
+    "firstName": "# ",
+    "lastName": "#"
+  },
+  {
+    "testCaseTitle": "add new book with numbers as first name",
+    "testCaseId": "10",
+    "expectedResponseCode": "200",
+    "expectedResponseTitle": "",
+    "id": "#",
+    "idBook": "1",
+    "firstName": "123",
+    "lastName": "Last name"
+  },
+  {
+    "testCaseTitle": "add new book with numbers as Last name",
+    "testCaseId": "10",
+    "expectedResponseCode": "200",
+    "expectedResponseTitle": "",
+    "id": "#",
+    "idBook": "1",
+    "firstName": "First name",
+    "lastName": "123"
+  },
+  {
+    "testCaseTitle": "add author with book id has special character ",
+    "testCaseId": "11",
+    "expectedResponseCode": "400",
+    "expectedResponseTitle": "One or more validation errors occurred.",
+    "id": "#",
+    "idBook": "1@",
+    "firstName": "#",
+    "lastName": "#"
+  },
+  {
+    "testCaseTitle": "Add author with id has special character ",
+    "testCaseId": "12",
+    "expectedResponseCode": "400",
+    "expectedResponseTitle": "One or more validation errors occurred.",
+    "id": "1@",
+    "idBook": "1",
+    "firstName": "#",
+    "lastName": "#"
+  },
+  {
+    "testCaseTitle": "update author with book id has space character ",
+    "testCaseId": "13",
+    "expectedResponseCode": "400",
+    "expectedResponseTitle": "One or more validation errors occurred.",
+    "id": "1",
+    "idBook": "1 1",
+    "firstName": "#",
+    "lastName": "#"
+  },
+  {
+    "testCaseTitle": "update author with id has space character ",
+    "testCaseId": "14",
+    "expectedResponseCode": "400",
+    "expectedResponseTitle": "One or more validation errors occurred.",
+    "id": "1 1",
+    "idBook": "1",
+    "firstName": "#",
+    "lastName": "#"
+  }
+]
